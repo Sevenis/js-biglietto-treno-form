@@ -13,18 +13,18 @@
                 <div class="insert-boxes-up">
                     <div class="insert-box">
                         <label for="name"> Nome Cognome </label>
-                        <input type="text" id="name" name="name" value="Inserisci nome e cognome"><br>
+                        <input type="text" id="name" name="name" placeholder="Inserisci nome e cognome"><br>
                     </div>
                     <div class="insert-box">
-                        <label for="name"> Km da percorrere </label>
-                        <input type="text" id="km" name="km" value="Inserisci km"><br>
+                        <label for="km"> Km da percorrere </label>
+                        <input type="text" id="km" name="km" placeholder="Inserisci km"><br>
                     </div>
                     <div class="insert-box">
                         <label for="eta"> Fascia d'età </label>
                         <select id="eta" name="eta">
-                            <option value="standard">Standard</option>
-                            <option value="minorenne">Minorenne</option>
-                            <option value="over">Over 65 anni</option>
+                            <option value="Tariffa standard">Standard</option>
+                            <option value="Sconto minorenne">Minorenne</option>
+                            <option value="Sconto Silver">Over 65 anni</option>
                         </select>
                     </div>
                 </div>
@@ -35,26 +35,25 @@
             </div>
             <h2>Il tuo biglietto</h2>
             <div class="ticket">
-            <h3>Dettaglio passeggeri</h3>
-            <div class="data-ticket">
-                <table style="width:100%">
-                  <tr>
-                    <th>NOME PASSEGGERO</th>
-                    <th>Offerta</th>
-                    <th>Carrozza</th>
-                    <th>Codice CP</th>
-                    <th>Costo biglietto</th>
-                  </tr>
-                  <tr>
-                    <td>Pietro</td>
-                    <td>Sconto minorile</td>
-                    <td>7</td>
-                    <td>87363</td>
-                    <td>3,45€</td>
-                  </tr>
-
-</table>
-            </div>
+                <h3>Dettaglio passeggeri</h3>
+                <div class="data-ticket">
+                    <table style="width:100%">
+                      <tr>
+                        <th>NOME PASSEGGERO</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                      </tr>
+                      <tr>
+                        <td id='passeggero'></td>
+                        <td id='offerta'></td>
+                        <td id='carrozza'></td>
+                        <td id='numero-ticket'></td>
+                        <td id ='prezzo'></td>
+                      </tr>
+                    </table>
+                </div>
             </div>
         </div>
 
