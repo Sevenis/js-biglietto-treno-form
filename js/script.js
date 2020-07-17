@@ -13,11 +13,13 @@ document.getElementById('genera').addEventListener("click", function(){
     document.getElementById('carrozza').innerHTML=numeroCarrozza;
     document.getElementById('numero-ticket').innerHTML=numeroTicket;
     document.getElementById('prezzo').innerHTML=tariffaViaggio;
+    document.getElementById('ticket').className = 'show';
     }
 );
 
 // Attiva bottone "ANNULLA" che cancella i dati del biglietto.
 document.getElementById('annulla').addEventListener("click", function(){
+    document.getElementById('ticket').className = 'hidden';
     document.getElementById('passeggero').innerHTML="";
     document.getElementById('offerta').innerHTML="";
     document.getElementById('carrozza').innerHTML="";

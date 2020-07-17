@@ -83,7 +83,7 @@ h2 {
     padding-bottom: 10px;
 }
 
-.ticket {
+#ticket {
     width: 800px;
     display: flex;
     align-self: center;
@@ -92,32 +92,41 @@ h2 {
     padding: 20px 20px;
 }
 
-.ticket h3 {
+.hidden {
+    opacity: 0;
+    transition: 0.2;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.2;
+}
+#ticket h3 {
     text-transform: uppercase;
     text-align: left;
 }
 
-.ticket table {
+#ticket table {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-.ticket table th {
+#ticket table th {
     padding-top: 15px;
 }
 
-.ticket table td {
+#ticket table td {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.ticket table th:first-of-type {
+#ticket table th:first-of-type {
     background-color: grey;
     text-align:left;
     padding-left: 20px;
 }
 
-.ticket table td:first-of-type {
+#ticket table td:first-of-type {
     background-color: grey;
     text-align: left;
     padding-left: 20px;
